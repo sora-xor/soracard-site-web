@@ -46,7 +46,7 @@ Commit changes.
 
 ![Screenshot](./images/06.jpg)
 
-Assign the `webdev` team as reviewers and create a pull request.
+Assign the `soracard` team as reviewers and create a pull request.
 
 ![Screenshot](./images/07.jpg)
 
