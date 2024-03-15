@@ -19,7 +19,7 @@ Markdown uses simple symbols and characters to represent formatting commands. Fo
 
 When creating blog posts on [Soracard.com](http://soracard.com/), you may want to include images to make your content more engaging. However, large image files can slow down your page load time, negatively impacting user experience and SEO. This is where [Squoosh](https://squoosh.app/) comes into play.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/fa89db2a-9012-4a09-95ef-8bbb6803aec1/13c82ef4-a3c3-424d-a925-6b1d14e09188/Untitled.png)
+![Squoosh App Screenshot](/blog/using-markdown/screenshot.png)
 
 [Squoosh](https://squoosh.app/) is a free online tool that allows you to optimise your images for the web. With [Squoosh](https://squoosh.app/), you can easily compress and resize your images without losing quality. The tool supports various formats including JPEG, PNG, WebP, and AVIF.
 
