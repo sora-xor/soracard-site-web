@@ -12,7 +12,7 @@ image: /blog/remote-work-finance/cover.jpg
 
 *The shift towards remote work has brought about new challenges in managing finances for the global workforce. Traditional financial management methods may be less effective in a remote work environment, where cross-border payments and currency conversions can be complex and costly. This is where cryptocurrency comes in, offering a solution that simplifies financial management for remote workers.*
 
-![sora card-payment solution.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/60b12b52-a589-4d53-8dd7-c112c8359650/c41bb787-e441-4a4a-a921-f7b32cb9b129/sora_card-payment_solution.png)
+![Squoosh App Screenshot](/blog/remote-work-finance/sora-card-payment-solution.jpg)
 
 ### **Understanding the Challenges of Remote Work Finance Management**
 
@@ -36,7 +36,7 @@ The SORA ecosystem introduces tools to streamline financial processes for remote
 
 Moreover, the [Polkaswap](http://polkaswap.io) Decentralized Exchange (DEX) simplifies buying and selling crypto assets, making it a vital tool for financial management within the SORA ecosystem. For businesses, [ADAR](https://adar.com/) (Advanced Digital Asset Routing) revolutionizes payroll, enabling employers to efficiently disburse wages in crypto, thereby simplifying international payments and reducing overhead costs.
 
-![sora card-project logos.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/60b12b52-a589-4d53-8dd7-c112c8359650/3ed15a8c-7d5e-43cd-85af-1a7e45369d2f/sora_card-project_logos.png)
+![Squoosh App Screenshot](/blog/remote-work-finance/sora-card-project-logos.jpg)
 
 Together, these tools form a comprehensive solution for managing finances in a remote work setting, offering:
 
