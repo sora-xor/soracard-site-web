@@ -24,7 +24,7 @@ This is where cryptocurrency addresses the challenges. Some of the advantages of
 
 ### Case Studies
 
-There are numerous examples of remote workers using crypto solutions to manage their finances. For instance, teams like SORA, [Chainlink Labs](https://chainlinklabs.com/), and [Figment](https://figment.io/) are building platforms and infrastructures that enable everyone to access blockchain technology and manage their finances more efficiently.
+There are numerous examples of remote workers using crypto solutions to manage their finances. For instance, teams like [SORA](https://sora.org/), [Chainlink Labs](https://chainlinklabs.com/), and [Figment](https://figment.io/) are building platforms and infrastructures that enable everyone to access blockchain technology and manage their finances more efficiently.
 
 The complexity of paying wages, managing expenses, and ensuring seamless financial operations becomes exponentially more challenging when your team spans the globe. Recognizing this challenge, the SORA ecosystem introduces pioneering solutions tailored for modern businesses.
 
@@ -34,7 +34,7 @@ The SORA ecosystem introduces tools to streamline financial processes for remote
 
 Moreover, the [Polkaswap](http://polkaswap.io) Decentralized Exchange (DEX) simplifies buying and selling crypto assets, making it a vital tool for financial management within the SORA ecosystem. For businesses, [ADAR](https://adar.com/) (Advanced Digital Asset Routing) revolutionizes payroll, enabling employers to efficiently disburse wages in crypto, thereby simplifying international payments and reducing overhead costs.
 
-![Squoosh App Screenshot](/blog/remote-work-finance/sora-card-project-logos.jpg)
+![SORA Card, Polkaswap, ADAR and SORA Wallet logos](/blog/remote-work-finance/sora-card-project-logos.jpg)
 
 Together, these tools form a comprehensive solution for managing finances in a remote work setting, offering:
 
