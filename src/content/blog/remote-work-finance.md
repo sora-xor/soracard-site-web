@@ -12,8 +12,6 @@ image: /blog/remote-work-finance/cover.jpg
 
 *The shift towards remote work has brought about new challenges in managing finances for the global workforce. Traditional financial management methods may be less effective in a remote work environment, where cross-border payments and currency conversions can be complex and costly. This is where cryptocurrency comes in, offering a solution that simplifies financial management for remote workers.*
 
-![Squoosh App Screenshot](/blog/remote-work-finance/sora-card-payment-solution.jpg)
-
 ### **Understanding the Challenges of Remote Work Finance Management**
 
 Remote workers often face financial complexities that are less prevalent in traditional work settings. These include hefty fees for currency conversions, time-consuming international bank transfers, and the struggle to access financial services without a fixed office location. These challenges underscore the need for innovative financial solutions catering to remote work's unique demands. 
