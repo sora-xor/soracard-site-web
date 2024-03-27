@@ -11,9 +11,6 @@
           style="--image: url('/icons/googleplay.svg')">
           <span>Google Play</span>
         </a>
-        <a href="https://github.com/sora-xor/sora-android/releases" class="store" style="--image: url('/icons/apk.svg')">
-          <span>APK</span>
-        </a>
       </div>
     </div>
     <div class="rounded bg-light1 pt-xs pb-s px-s text-xs">
@@ -39,7 +36,6 @@
   display: flex;
   gap: var(--space-xs);
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -53,11 +49,15 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
 .image {
   width: 100%;
   max-width: 20rem;
+  justify-content: center;
+  flex: 1;
 }
 
 .image>img,
@@ -68,7 +68,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .store {
