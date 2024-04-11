@@ -13,17 +13,18 @@ const { title, description, date, image } = defineProps<BlogArticleMeta>()
         {{ description }}
       </p>
       <p class="date text-s color-dark2 mb-l mx-auto" data-aos="fade-up" data-aos-delay="200">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
           <path
-            d="M3.33325 5.83333C3.33325 5.3913 3.50885 4.96738 3.82141 4.65482C4.13397 4.34226 4.55789 4.16666 4.99992 4.16666H14.9999C15.4419 4.16666 15.8659 4.34226 16.1784 4.65482C16.491 4.96738 16.6666 5.3913 16.6666 5.83333V15.8333C16.6666 16.2754 16.491 16.6993 16.1784 17.0118C15.8659 17.3244 15.4419 17.5 14.9999 17.5H4.99992C4.55789 17.5 4.13397 17.3244 3.82141 17.0118C3.50885 16.6993 3.33325 16.2754 3.33325 15.8333V5.83333Z"
-            stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M13.3333 2.5V5.83333" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
-            stroke-linejoin="round" />
-          <path d="M6.66675 2.5V5.83333" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
-            stroke-linejoin="round" />
-          <path d="M3.33325 9.16666H16.6666" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
-            stroke-linejoin="round" />
+            d="M6 5C6 4.44772 6.44772 4 7 4C7.55228 4 8 4.44772 8 5V7C8 7.55228 7.55228 8 7 8C6.44772 8 6 7.55228 6 7V5Z"
+            fill="currentColor" />
+          <path
+            d="M5.5 6.06301C4.63739 6.28503 4 7.06808 4 8V14C4 15.1046 4.89543 16 6 16H14C15.1046 16 16 15.1046 16 14V8C16 7.06808 15.3626 6.28503 14.5 6.06301V7C14.5 7.82843 13.8284 8.5 13 8.5C12.1716 8.5 11.5 7.82843 11.5 7V6H8.5V7C8.5 7.82843 7.82843 8.5 7 8.5C6.17157 8.5 5.5 7.82843 5.5 7V6.06301Z"
+            fill="currentColor" />
+          <path
+            d="M13 4C12.4477 4 12 4.44772 12 5V7C12 7.55228 12.4477 8 13 8C13.5523 8 14 7.55228 14 7V5C14 4.44772 13.5523 4 13 4Z"
+            fill="currentColor" />
         </svg>
+
         {{ (new Date(date)).toDateString() }}
       </p>
       <img :src="image" alt="Article cover image" class="rounded" data-aos="fade-up" data-aos-delay="300">
@@ -58,5 +59,9 @@ const { title, description, date, image } = defineProps<BlogArticleMeta>()
   aspect-ratio: 16/9;
   object-fit: cover;
   background-color: var(--color-dark2);
+}
+
+.icon {
+  width: 2.4rem;
 }
 </style>

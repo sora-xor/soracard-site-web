@@ -40,11 +40,16 @@ Add the required meta information at the beginning of the file:
 title: 'Article Title'
 description: 'Description (155-260 characters)'
 date: 2024-03-11
-image: /blog/[article-path]/cover.jpg
+image: /blog/[article-path]/cover.jpg # cover for the website, 1920x1080px
+og: /blog/[article-path]/og.jpg # thumbnal image for sharing, 1200x630px
 ---
 ```
 
-Replace `[article-path]` in the image path with the actual `.md` file name. We will upload this image during [Step 4](#4-add-the-images).
+Replace `[article-path]` in the paths with the actual `.md` file name. We will upload those images during [Step 4](#4-add-the-images).
+
+- `image` is an article cover image to be used on the website. Its size should be 1920x1080px, and it's recommended to minimize the amount of text on that image.
+
+- `og` is an image to be used when sharing the article on social media. Its size should be 1200x630px
 
 ![Screenshot](./images/06.jpg)
 
@@ -89,7 +94,13 @@ Visit [squoosh.app](https://squoosh.app)
 
 ![Screenshot](./images/14.jpg)
 
-Upload the image to optimize. For the cover/hero image, the size should be **1920x1080 pixels** (use **Resize** toggle to adjust if needed); for other images, a recommended width is **1280 pixels**. You can experiment with various compression parameters or just use **MozJPEG 80% quality**.
+Upload the image to optimize.
+
+- For the cover/hero image, the size should be **1920x1080 pixels** (use **Resize** toggle to adjust if needed).
+- For the sharing image, the size should be **1200x630 pixels** (use **Resize** toggle to adjust if needed).
+- For other images, a recommended width is **1280 pixels**.
+
+You can experiment with various compression parameters or just use **MozJPEG 80% quality**.
 
 ![Screenshot](./images/15.jpg)
 
@@ -115,6 +126,4 @@ Nice, the article is ready, so push the **Ready for review** button.
 
 ## 5. Publish on production
 
-Wait for the Pull Request approval by a member of the `soracard` team, and then merge it. Once merged, the changes will be published in production.
-
-![Screenshot](./images/21.jpg)
+A member of the `soracard` team will review the PR, either request changes or approve it, and subsequently merge it into the master branch. Once merged, the changes will be published in production.

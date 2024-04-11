@@ -1,7 +1,17 @@
 <script setup lang="ts">
+const { baseUrl } = useRuntimeConfig().public
+
+const title = 'SORA Card | Value Freedom — Contact'
+const ogImage = `${baseUrl}/contact/og.jpg`
 useSeoMeta({
-  title: 'SORA Card | Value Freedom — Contact'
+  title,
+  ogTitle: title,
+  twitterTitle: title,
+  ogImage,
+  ogImageSecureUrl: ogImage,
+  twitterImage: ogImage,
 })
+
 const telegramTileContents = {
   icon: '/icons/telegram.svg',
   title: 'Telegram',

@@ -3,6 +3,7 @@ title: 'SORA Card vs. Other Crypto Cards and Wallets'
 description: 'A Comparison Between SORA Card and Other Crypto Card Solutions'
 date: 2022/09/30
 image: /blog/sora-card-vs-others/cover.jpg
+og: /blog/sora-card-vs-others/og.jpg
 ---
 
 When designing the SORA Card solution, everyone involved was focused on delivering a unique product that stands out against the crypto card crowd and stays true to the SORA values of freedom, decentralization, self-custody and ownership, growth, as well as privacy.

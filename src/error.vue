@@ -14,11 +14,11 @@ const { error } = defineProps<{
 <template>
   <Header />
   <section class="content w text-center py-3xl">
-    <h1 class="mb-s break-word">Error {{ error.statusCode }}</h1>
-    <p class="text-l mb-l">
+    <h1 class="text-3xl mb-s break-word" data-aos="fade-up">Error {{ error.statusCode }}</h1>
+    <p class="text-l mb-l" data-aos="fade-up" data-aos-delay="100">
       {{ error.statusMessage }}
     </p>
-    <Button href="/" title="Homepage" />
+    <Button href="/" title="Homepage" large data-aos="fade-up" data-aos-delay="200" />
   </section>
   <Footer />
 </template>

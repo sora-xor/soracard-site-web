@@ -1,7 +1,17 @@
 <script setup lang="ts">
+const { baseUrl } = useRuntimeConfig().public
+
+const title = 'SORA Card | Value Freedom — Fees'
+const ogImage = `${baseUrl}/fees/og.jpg`
 useSeoMeta({
-  title: 'SORA Card | Value Freedom — Fees'
+  title,
+  ogTitle: title,
+  twitterTitle: title,
+  ogImage,
+  ogImageSecureUrl: ogImage,
+  twitterImage: ogImage,
 })
+
 const nav = [
   { title: 'IBAN / SEPA Transaction Fees', href: '#1' },
   { title: 'FX Conversion Fees', href: '#2' },

@@ -18,7 +18,7 @@ const features = [
         <li v-for="feature in features" class="pl-l pb-xs">{{ feature }}</li>
       </ul>
       <div class="text-xs">
-        *Currently SORA Substrate-based network with a bridge to Ethereum and Kusama, soon other EVM networks and Polkadot
+        *Currently SORA network with a bridge to Ethereum, Polkadot and Kusama, soon other EVM networks and Bitcoin
       </div>
     </div>
   </section>

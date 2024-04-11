@@ -1,6 +1,15 @@
 <script setup lang="ts">
+const { baseUrl } = useRuntimeConfig().public
+
+const title = 'SORA Card | Value Freedom — Technology'
+const ogImage = `${baseUrl}/technology/og.jpg`
 useSeoMeta({
-  title: 'SORA Card | Value Freedom — Technology'
+  title,
+  ogTitle: title,
+  twitterTitle: title,
+  ogImage,
+  ogImageSecureUrl: ogImage,
+  twitterImage: ogImage,
 })
 </script>
 
@@ -11,9 +20,11 @@ useSeoMeta({
       We believe in a better, more efficient blockchain network for all
     </h1>
     <p class="text-l">
-      SORA is built on <a href="https://substrate.io/" target="_blank">Parity Substrate</a>, a framework that scales more
+      SORA is built on <a href="https://substrate.io/" target="_blank">Parity Substrate</a>, a framework that scales
+      more
       efficiently than
-      Ethereum, resulting in lower fees. With SORA's NPoS (Nominated Proof-of-Stake) mechanism, validators play a crucial
+      Ethereum, resulting in lower fees. With SORA's NPoS (Nominated Proof-of-Stake) mechanism, validators play a
+      crucial
       role in accepting or rejecting transactions.
     </p>
     <hr>
@@ -33,7 +44,8 @@ useSeoMeta({
       One of the DeFi applications built on the SORA network is <a href="https://polkaswap.io/"
         target="_blank">Polkaswap</a>. Polkaswap is a non-custodial AMM DEX exclusively designed for the Polkadot
       ecosystem and its interoperable future. Polkaswap offers boundless liquidity through its one-of-a-kind <a
-        href="https://twitter.com/soramitsu_co/status/1654425644296536067" target="_blank">Aggregate Liquidity Technology
+        href="https://twitter.com/soramitsu_co/status/1654425644296536067" target="_blank">Aggregate Liquidity
+        Technology
         (ALT)</a>, with security, and convenience, facilitating immediate asset exchanges with ease and flexibility.
     </p>
     <p>

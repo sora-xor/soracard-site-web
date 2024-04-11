@@ -3,6 +3,7 @@ title: 'Introducing SORA Card'
 description: 'A unique, self-custodial crypto debit card, built for the interoperable future'
 date: 2022/09/08
 image: /blog/introducing-sora-card/cover.jpg
+og: /blog/introducing-sora-card/og.jpg
 ---
 
 The SORA community is proud to introduce a unique, self-custodial crypto wallet featuring full compatibility with the Polkaswap DEX, seamlessly integrated with IBAN (bank account) and debit card functionality–all in one place, in the palm of your hand!

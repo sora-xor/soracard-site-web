@@ -2,7 +2,7 @@ const title = 'SORA Card | Value Freedom',
   description = 'Access the new era of interoperable finance, all in the palm of your hands.',
   keyWords =
     'SORA, Polkaswap, Decentralization, DeFi, Future, Sortition, Metaverse, TradFi, Card, Crypto',
-  ogImage = '/og.jpg'
+  ogImage = `${process.env.NUXT_PUBLIC_BASE_URL || ''}/og.jpg`
 
 export default defineNuxtConfig({
   srcDir: 'src/',
@@ -35,7 +35,11 @@ export default defineNuxtConfig({
     gmailUser: '',
 
     recaptchaSecretKey: '',
-    public: { recaptchaSiteKey: '' },
+    public: {
+      recaptchaSiteKey: '',
+
+      baseUrl: '',
+    },
   },
   app: {
     head: {

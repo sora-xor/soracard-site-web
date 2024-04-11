@@ -3,6 +3,7 @@ title: 'SORA Card Phase 1: Everything You Need to Know'
 description: 'Soon you can start the card application and KYC procedure in all security and privacy, and order your SORA Card through Polkaswap.io, soracard.com, or SORA Wallet. Here is what you need to know.'
 date: 2022/11/12
 image: /blog/sora-card-phase-1/cover.jpg
+og: /blog/sora-card-phase-1/og.jpg
 ---
 
 ### TL;DR

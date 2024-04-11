@@ -3,6 +3,7 @@ title: 'SORA Card AMA #2'
 description: 'On Thursday 17th of August, an AMA with Dr Makoto Takemiya, Beno Van Gansen and the SORA community was held on Telegram to answer questions about SORA Card'
 date: 2023/08/17
 image: /blog/sora-card-ama-2/cover.jpg
+og: /blog/sora-card-ama-2/og.jpg
 ---
 
 ### Hello, Dear community! Welcome to the SORA Card Launch AMA! We are joined by Beno and Makoto Takemiya. First, we will answer the pre-submitted questions and then will have a short live Q&A.

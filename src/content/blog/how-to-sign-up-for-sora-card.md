@@ -3,6 +3,7 @@ title: 'How to Sign Up for SORA Card, a Walkthrough'
 description: 'In this article, you will find a walkthrough to sign up for SORA Card and undergo the KYC process.'
 date: 2023/08/08
 image: /blog/how-to-sign-up-for-sora-card/cover.jpg
+og: /blog/how-to-sign-up-for-sora-card/og.jpg
 ---
 
 Although signing up and undergoing KYC for SORA Card is straightforward, this article will help you resolve any questions you might have.
@@ -103,10 +104,10 @@ If your application is rejected, you will see this screen with the reason for th
 
 When you see this screen, you have used up your complementary KYC attempts, and additional attempts come at €3.80 per attempt. Additional paid KYC will be available from a future release onward.
 
-If you have any issues or questions, you can contact our community support on [Telegram](https://t.me/SORAhappiness) or through the Support button in the app.
+If you have any issues or questions, you can contact our community support on [Telegram](https://t.me/sora_happy) or through the Support button in the app.
 
 ## Next steps
 
 The SORA Card team will continue to provide regular updates to upgrade and improve the product and user experience based on your feedback. Your IBAN will be enabled and activated shortly after your KYC has been approved. This will allow euro transactions, such as SEPA transfers, to and from your account.
 
-In the next major release, you will receive a virtual and physical card, and the crypto on/offramp to euro, as well as an exchange, will be enabled If you have any further questions or feedback, please reach out on the [main SORA](https://t.me/sora_xor) and [SORA Happiness](https://t.me/SORAhappiness) chats.
+In the next major release, you will receive a virtual and physical card, and the crypto on/offramp to euro, as well as an exchange, will be enabled If you have any further questions or feedback, please reach out on the [main SORA](https://t.me/sora_xor) and [SORA Happiness](https://t.me/sora_happy) chats.

@@ -3,6 +3,7 @@ title: 'SORA Card AMA #1'
 description: On Thursday 24th of November, an AMA with Dr Makoto Takemiya, Beno Van Gansen and the SORA community was held on Telegram to answer questions about SORA Card and its upcoming release
 date: 2022/11/26
 image: /blog/sora-card-ama-1/cover.jpg
+og: /blog/sora-card-ama-1/og.jpg
 ---
 
 ### The first SORA Card AMA took place on Thursday 24th of November, 2022

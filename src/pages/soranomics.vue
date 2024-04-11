@@ -1,6 +1,15 @@
 <script setup lang="ts">
+const { baseUrl } = useRuntimeConfig().public
+
+const title = 'SORA Card | Value Freedom — SORAnomics'
+const ogImage = `${baseUrl}/soranomics/og.jpg`
 useSeoMeta({
-  title: 'SORA Card | Value Freedom — SORAnomics'
+  title,
+  ogTitle: title,
+  twitterTitle: title,
+  ogImage,
+  ogImageSecureUrl: ogImage,
+  twitterImage: ogImage,
 })
 </script>
 
@@ -11,13 +20,16 @@ useSeoMeta({
       We believe inflation is beneficial only when new goods or services are created using the newly printed money
     </h1>
     <p class="text-l">
-      That's why we're building a decentralized and democratic economic system that empowers producers to create new goods
+      That's why we're building a decentralized and democratic economic system that empowers producers to create new
+      goods
       and services, without discriminating against anyone.
     </p>
     <hr>
     <p>
-      With SORA, financial inclusion for all is possible, and managing day-to-day finances becomes a breeze. Our on-chain
-      governance system is powered by the <a href="https://wiki.sora.org/tokenomics" target="_blank">XOR token</a>, which
+      With SORA, financial inclusion for all is possible, and managing day-to-day finances becomes a breeze. Our
+      on-chain
+      governance system is powered by the <a href="https://wiki.sora.org/tokenomics" target="_blank">XOR token</a>,
+      which
       allows producers to propose funding for their projects. Token
       holders then vote on how to allocate tokens, ensuring that only the best goods and services are created.
     </p>
@@ -26,15 +38,17 @@ useSeoMeta({
       thriving economic ecosystem.
     </p>
     <figure class="mt-xl mb-l">
-      <YoutubeVideo id="KEfdlctvHH4" cover="/about/werner.jpg" class="mb-s" />
+      <YoutubeVideo id="KEfdlctvHH4" cover="/soranomics/werner.jpg" class="mb-s" />
       <figcaption class="text-center text-s">
         Professor Richard Werner presenting at the SORA Economic Forum, June 22, 2021
       </figcaption>
     </figure>
     <p>
-      Our mechanism is based on the Disaggregated Quantity Theory of Credit, which states that a currency can be inflated
+      Our mechanism is based on the Disaggregated Quantity Theory of Credit, which states that a currency can be
+      inflated
       in three ways: for <strong>consumption</strong>, for <strong>speculation</strong>, or for
-      <strong>production</strong>. Inflating a currency for consumption or speculation leads to economic instability, but
+      <strong>production</strong>. Inflating a currency for consumption or speculation leads to economic instability,
+      but
       creating money for production can drive predictable economic growth, advancing human development and technology.
     </p>
     <p>

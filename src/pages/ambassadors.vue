@@ -1,6 +1,15 @@
 <script setup lang="ts">
+const { baseUrl } = useRuntimeConfig().public
+
+const title = 'SORA Card | Value Freedom — Ambassadors'
+const ogImage = `${baseUrl}/ambassadors/og.jpg`
 useSeoMeta({
-  title: 'SORA Card | Value Freedom — Ambassadors'
+  title,
+  ogTitle: title,
+  twitterTitle: title,
+  ogImage,
+  ogImageSecureUrl: ogImage,
+  twitterImage: ogImage,
 })
 </script>
 
@@ -16,18 +25,21 @@ useSeoMeta({
     </p>
     <hr>
     <p>
-      You will have access to exclusive resources, such as training materials and support from the SORA team, to help you
+      You will have access to exclusive resources, such as training materials and support from the SORA team, to help
+      you
       effectively communicate the message and build a strong network of supporters.
     </p>
     <figure class="mt-xl mb-l">
-      <YoutubeVideo id="Gcqw4g1g-bo" cover="/about/ambassadors.jpg" class="mb-s" />
+      <YoutubeVideo id="Gcqw4g1g-bo" cover="/ambassadors/video.jpg" class="mb-s" />
       <figcaption class="text-center text-s">
         Become a SORAmbassador
       </figcaption>
     </figure>
     <p>
-      By becoming a SORA ambassador, you will also have the chance to collaborate with other like-minded individuals from
-      around the world and make a meaningful impact in the crypto and blockchain space. You will be able to participate in
+      By becoming a SORA ambassador, you will also have the chance to collaborate with other like-minded individuals
+      from
+      around the world and make a meaningful impact in the crypto and blockchain space. You will be able to participate
+      in
       events, webinars, and other activities that will help you grow as a leader and expand your knowledge of the
       industry.
     </p>

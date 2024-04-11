@@ -26,13 +26,14 @@ const { open } = defineProps<{ open: boolean }>()
 .burger::before,
 .burger::after {
   content: '';
-  height: 2px;
+  height: 0.3rem;
   width: 100%;
-  margin: -1px 0;
+  margin: -0.15rem 0;
   position: absolute;
   top: 50%;
   transition: transform .3s ease;
   background-color: currentColor;
+  border-radius: 1rem;
 }
 
 .burger::before {

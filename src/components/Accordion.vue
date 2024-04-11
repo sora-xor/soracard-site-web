@@ -69,9 +69,9 @@ const toggleAccordion = (i: number) => {
   position: absolute;
   top: 50%;
   left: 0;
-  height: 0.2rem;
+  height: 0.3rem;
   width: 100%;
-  margin: -0.1rem 0;
+  margin: -0.15rem 0;
   transition: transform 1s var(--ease);
   overflow: hidden;
   border-radius: 1rem;

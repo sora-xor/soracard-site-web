@@ -1,6 +1,15 @@
 <script setup lang="ts">
+const { baseUrl } = useRuntimeConfig().public
+
+const title = 'SORA Card | Value Freedom — Privacy Policy'
+const ogImage = `${baseUrl}/privacy/og.jpg`
 useSeoMeta({
-  title: 'SORA Card | Value Freedom — Privacy Policy'
+  title,
+  ogTitle: title,
+  twitterTitle: title,
+  ogImage,
+  ogImageSecureUrl: ogImage,
+  twitterImage: ogImage,
 })
 
 const nav = [
@@ -133,7 +142,8 @@ const nav = [
 
       <h3>Information We Collect Automatically</h3>
 
-      <p><strong>3.9.</strong> When you use the Website, Products and Services, we automatically collect information about
+      <p><strong>3.9.</strong> When you use the Website, Products and Services, we automatically collect information
+        about
         you, including:</p>
       <ul>
         <li><strong>3.9.1. Log Information:</strong> We collect log files that contain the type of browser you use,

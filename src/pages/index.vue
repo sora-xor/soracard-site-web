@@ -1,8 +1,11 @@
 <script setup lang="ts">
 const isModalOpen = useApplyModalState()
 
+const title = 'SORA Card | Value Freedom'
 useSeoMeta({
-  title: 'SORA Card | Value Freedom'
+  title,
+  ogTitle: title,
+  twitterTitle: title,
 })
 </script>
 

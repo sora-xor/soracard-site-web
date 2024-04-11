@@ -36,7 +36,7 @@ const { icon, title, description, button } = defineProps<{
 }
 
 .image img {
-  max-width: 6rem;
+  max-width: 9rem;
   width: 100%;
   aspect-ratio: 1/1;
 }
