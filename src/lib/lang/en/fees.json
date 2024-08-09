@@ -6,179 +6,554 @@
     "ogImage": "fees/og.jpg"
   },
   "headline": "Fees",
-  "date": "May 8, 2023",
+  "date": "August 8, 2024",
   "lead": {
     "accent": "The first 5000 applicants will not pay yearly or monthly fees for the first 2 years.",
     "regular": "Only fees according to their usage will be charged to their account.*",
     "note": "* Usage fees are necessary to cover the costs of banking and card service partners, who handle financial transactions. These fees are a financially sustainable way for SORA to provide its services while ensuring the privacy and security of users. It's important to remember that if a product is free, you are likely the product being sold. With SORA, you can trust that your personal information is not being used for profit. So, paying the usage fees is a small price to pay for the peace of mind that comes with using a secure and reliable platform like SORA Card."
   },
-  "action": "Action",
-  "amount": "Amount",
-  "recurrence": "Recurrence/Conditions",
-  "items": [
+  "action": "Billing item",
+  "price1": "End-user price",
+  "price2": "2nd card / account +",
+  "period": "Period",
+  "adoptionGroups": {
+    "earlyAdopters": "Early Adopters",
+    "afterACQIntegration": "Standard"
+  },
+  "earlyAdopters": [
     {
-      "title": "IBAN/SEPA Transaction Fees",
+      "title": "Onboarding",
       "table": [
         {
-          "action": "Account to account transfer fee (interledger)",
-          "amount": "€0.22",
-          "recurrence": "per transaction"
+          "action": "Suggested yearly subscription",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Yearly"
         },
+        { "action": "KYC Onboarding", "price1": "0.00€", "price2": "0.00€", "period": "One-Off" },
         {
-          "action": "Incoming/outgoing transaction fee (SEPA, SEPA instant)",
-          "amount": "0.1% + €0.40",
-          "recurrence": "per transaction"
-        },
-        {
-          "action": "BACS, CHAPS, ACH",
-          "amount": "0.1% + €1.10",
-          "recurrence": "per transaction"
-        },
-        {
-          "action": "IBAN/ledger load fee (card transfer)",
-          "amount": "€0",
-          "recurrence": "per transaction"
+          "action": "Screening (2x per year)",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Yearly"
         }
       ]
     },
     {
-      "title": "FX Conversion Fees",
+      "title": "Account",
       "table": [
         {
-          "action": "FX",
-          "amount": "T1 0.7%, T2 1%, T3 2.2%, T4 per case",
-          "recurrence": "of transaction volume, currency dependent"
+          "action": "Account issuing + activation",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "One-Off"
+        },
+        { "action": "Account monthly", "price1": "0.00€", "price2": "0.00€", "period": "Monthly" },
+        {
+          "action": "Account inactivity fees (after 3 months)",
+          "price1": "1.99€",
+          "price2": "1.99€",
+          "period": "Monthly"
+        },
+        {
+          "action": "Account closing",
+          "price1": "8.00€",
+          "price2": "8.00€",
+          "period": "One-off"
         }
       ]
     },
     {
-      "title": "Card and Account Fees",
+      "title": "Account Transactions",
       "table": [
         {
-          "action": "Account/card top-up with 3rd party debit or credit card through ecommerce transaction",
-          "amount": "2.5%",
-          "recurrence": "of transaction volume + interchange + card scheme costs"
+          "action": "INTERNAL Trasactions (between user's own accounts)",
+          "price1": "0.22€",
+          "price2": "0.22€",
+          "period": "Per event"
         },
         {
-          "action": "Account/card top-up with 3rd party debit or credit card through softPOS transaction—card present",
-          "amount": "1.5%",
-          "recurrence": "of transaction volume + interchange + card scheme costs"
+          "action": "INTERLEDGER Trasactions (between users)",
+          "price1": "0.22€",
+          "price2": "0.22€",
+          "period": "Per event"
         },
         {
-          "action": "Inactivity cost (negative interest rate on Euro IBANs)",
-          "amount": "0.06%",
-          "recurrence": "monthly, included in account fee for balances under €1,500 only"
+          "action": "SEPA incoming",
+          "price1": "0.05€",
+          "price2": "0.05€",
+          "period": "Per event"
         },
         {
-          "action": "POS/online purchases",
-          "amount": "10 complementary purchases",
-          "recurrence": "per month"
+          "action": "SEPA outgoing",
+          "price1": "0.50€",
+          "price2": "0.50€",
+          "period": "Per event"
         },
         {
-          "action": null,
-          "amount": "€0.22",
-          "recurrence": "per purchase after that"
+          "action": "SWIFT incoming",
+          "price1": "0.05€",
+          "price2": "0.05€",
+          "period": "Per event"
         },
         {
-          "action": "Virtual card",
-          "amount": "first card is paid by SORA community",
-          "recurrence": ""
+          "action": "SWIFT outgoing",
+          "price1": "20.00€",
+          "price2": "20.00€",
+          "period": "Per event"
         },
         {
-          "action": null,
-          "amount": "additional cards paid by user €2",
-          "recurrence": "per virtual card issued"
+          "action": "Account Topup 3rd Party Card",
+          "price1": "int++ 3%",
+          "price2": "int++ 3%",
+          "period": "Per event"
         },
         {
-          "action": "Monthly card maintenance fee",
-          "amount": "€0 / €0.99 if the card is not used at least 3x per month",
-          "recurrence": "paid by SORA community for the first 5000 users"
+          "action": "Account Topup 3rd Party SoftPOS",
+          "price1": "int++ 2%",
+          "price2": "int++ 2%",
+          "period": "Per event"
         },
         {
-          "action": "Membership fee",
-          "amount": "€0",
-          "recurrence": "offered by the SORA community"
-        },
-        {
-          "action": "3D secure fee",
-          "amount": "€0.18",
-          "recurrence": "per attempt"
-        },
-        {
-          "action": "ATM domestic",
-          "amount": "€1.20 + 0.5%",
-          "recurrence": "per transaction, additional costs may apply depending on the ATM provider"
-        },
-        {
-          "action": "ATM EEA+UK",
-          "amount": "€1.20 + 0.8%",
-          "recurrence": "per transaction, additional costs may apply depending on the ATM provider"
-        },
-        {
-          "action": "ATM international",
-          "amount": "€1.20 + 3%",
-          "recurrence": "per transaction, additional costs may apply depending on the ATM provider"
-        },
-        {
-          "action": "ATM operations",
-          "amount": "€0",
-          "recurrence": "plus costs if any (decline etc.)"
-        },
-        {
-          "action": "Foreign currency purchases / ATM",
-          "amount": "€0.65 + 0.2%",
-          "recurrence": "plus FX costs if any"
-        },
-        {
-          "action": "ATM balance inquiry",
-          "amount": "€0.65",
-          "recurrence": "plus costs if any"
-        },
-        {
-          "action": "Load fee (card, direct)",
-          "amount": "0%",
-          "recurrence": "of load amount + bank transfer fees"
-        },
-        {
-          "action": "Exchange fee XOR↔EUR",
-          "amount": "1.95%",
-          "recurrence": "of load amount + bank transfer fees"
+          "action": "Account Topup Crypto",
+          "price1": "1.0%",
+          "price2": "1.0%",
+          "period": "Per event"
         }
       ]
     },
     {
-      "title": "Limits",
+      "title": "Cards",
       "table": [
         {
-          "action": "Cash Withdrawal Limit",
-          "amount": {
-            "value": "EUR 5,000*",
-            "note": "* Will be higher for upcoming higher tier card programs. ATM limits need to be observed."
+          "action": "Physical card issuing",
+          "price1": "0.00€",
+          "price2": "5.00€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Physical card reissuing, renewal",
+          "price1": "5.00€",
+          "price2": "5.00€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Physical card replacement",
+          "price1": "5.00€",
+          "price2": "5.00€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Card delivery (cost, varies depending on country)",
+          "price1": "0.00€",
+          "price2": "2.00€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Virtual card issuing",
+          "price1": "0.00€",
+          "price2": "2.99€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Virtual card reissuing, renewal",
+          "price1": "0.25€",
+          "price2": "0.50€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Virtual card replacement",
+          "price1": "0.25€",
+          "price2": "0.50€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Card activation (physical, virtual)",
+          "price1": "0.00€",
+          "price2": "1.99€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Physical card monthly",
+          "price1": "0.00€",
+          "price2": "1.49€",
+          "period": "Monthly"
+        },
+        {
+          "action": "Virtual card monthly",
+          "price1": "0.00€",
+          "price2": "1.49€",
+          "period": "Monthly"
+        },
+        {
+          "action": "Card inactivity fees (after 3 months) - virtual ",
+          "price1": "0.00€",
+          "price2": "0.99€",
+          "period": "Monthly"
+        },
+        {
+          "action": "Card inactivity fees (after 3 months) - physical ",
+          "price1": "0.00€",
+          "price2": "0.99€",
+          "period": "Monthly"
+        },
+        {
+          "action": "Card blocking/unblocking, PIN unblocking",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Per event"
+        },
+        {
+          "action": "Balance inquiry (ATM, SMS)",
+          "price1": "0.00€",
+          "price2": "0.35€",
+          "period": "Per event"
+        },
+        { "action": "PIN change", "price1": "0.00€", "price2": "0.50€", "period": "Per event" }
+      ]
+    },
+    {
+      "title": "Card Transactions",
+      "table": [
+        {
+          "action": "Ledger load Fee (card account top-up)",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Per event"
+        },
+        {
+          "action": "CARD PAYMENT EEA ONLINE",
+          "price1": {
+            "value": "0.22€",
+            "note": "First 10 card payments are complementary (per month)"
           },
-          "recurrence": "per day"
+          "price2": "0.22€",
+          "period": "Per event"
         },
         {
-          "action": "Spending Limit",
-          "amount": {
-            "value": "EUR 25,000*",
-            "note": "* Will be higher for upcoming higher tier card programs."
+          "action": "CARD PAYMENT EEA+ POS",
+          "price1": {
+            "value": "0.22€",
+            "note": "First 10 card payments are complementary (per month)"
           },
-          "recurrence": "per day"
+          "price2": "0.22€",
+          "period": "Per event"
         },
         {
-          "action": "Daily Top-Up Limit",
-          "amount": "EUR 30,000",
-          "recurrence": "per day"
+          "action": "CARD PAYMENT international ONLINE + FX",
+          "price1": "0.90€ + 1,1%",
+          "price2": "0.90€ + 1,1%",
+          "period": "Per event"
         },
         {
-          "action": "Monthly Top-Up Limit",
-          "amount": "EUR 30,000",
-          "recurrence": "per month"
+          "action": "CARD PAYMENT international POS + FX",
+          "price1": "0.90€ + 1,1%",
+          "price2": "0.90€ + 1,1%",
+          "period": "Per event"
         },
         {
-          "action": "Annual Top-Up Limit",
-          "amount": "EUR 360,000",
-          "recurrence": "per year"
+          "action": "ATM EEA+ (+ ATM cost)",
+          "price1": "1.2€ + 3.0%",
+          "price2": "1.2€ + 3.0%",
+          "period": "Per event"
+        },
+        {
+          "action": "ATM International (+ ATM cost)",
+          "price1": "1.75€ + 3%",
+          "price2": "1.75€ + 3%",
+          "period": "Per event"
+        },
+        {
+          "action": "3D Secure SMS and/or SCA for online transactions",
+          "price1": "0.09€",
+          "price2": "0.09€",
+          "period": "Per item"
+        },
+        {
+          "action": "3DS Card enrollment",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Monthly"
+        },
+        {
+          "action": "SMS notification (excluding MC Secure Code and Visa Secure)",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Per event"
+        },
+        {
+          "action": "Digital card quarterly (Apple Pay) - per card",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Monthly"
+        },
+        {
+          "action": "Google Pay - online or POS payment (on top)",
+          "price1": "0.00%",
+          "price2": "0.00%",
+          "period": "Monthly"
+        },
+        {
+          "action": "Apple Pay - online or POS payment (on top)",
+          "price1": "0.00%",
+          "price2": "0.00%",
+          "period": "Monthly"
+        }
+      ]
+    }
+  ],
+  "afterACQIntegration": [
+    {
+      "title": "Onboarding",
+      "table": [
+        {
+          "action": "Suggested yearly subscription",
+          "price1": "39.00€",
+          "price2": "0.00€",
+          "period": "Yearly"
+        },
+        { "action": "KYC Onboarding", "price1": "0.00€", "price2": "0.00€", "period": "One-Off" },
+        {
+          "action": "Screening (2x per year)",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Yearly"
+        }
+      ]
+    },
+    {
+      "title": "Account",
+      "table": [
+        {
+          "action": "Account issuing + activation",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "One-Off"
+        },
+        { "action": "Account monthly", "price1": "0.00€", "price2": "0.00€", "period": "Monthly" },
+        {
+          "action": "Account inactivity fees (after 4 months)",
+          "price1": "1.99€",
+          "price2": "1.99€",
+          "period": "Monthly"
+        },
+        { "action": "Account closing", "price1": "8.00€", "price2": "8.00€", "period": "One-off" }
+      ]
+    },
+    {
+      "title": "Account Transactions",
+      "table": [
+        {
+          "action": "INTERNAL Trasactions (between user's own accounts)",
+          "price1": "0.22€",
+          "price2": "0.22€",
+          "period": "Per event"
+        },
+        {
+          "action": "INTERLEDGER Trasactions (between users)",
+          "price1": "0.22€",
+          "price2": "0.22€",
+          "period": "Per event"
+        },
+        { "action": "SEPA incoming", "price1": "0.05€", "price2": "0.05€", "period": "Per event" },
+        { "action": "SEPA outgoing", "price1": "0.50€", "price2": "0.50€", "period": "Per event" },
+        { "action": "SWIFT incoming", "price1": "0.05€", "price2": "0.05€", "period": "Per event" },
+        {
+          "action": "SWIFT outgoing",
+          "price1": "20.00€",
+          "price2": "20.00€",
+          "period": "Per event"
+        },
+        {
+          "action": "Account Topup 3rd Party Card",
+          "price1": "int++ 3%",
+          "price2": "int++ 3%",
+          "period": "Per event"
+        },
+        {
+          "action": "Account Topup 3rd Party SoftPOS",
+          "price1": "int++ 2%",
+          "price2": "int++ 2%",
+          "period": "Per event"
+        },
+        {
+          "action": "Account Topup Crypto",
+          "price1": "1.0%",
+          "price2": "1.0%",
+          "period": "Per event"
+        }
+      ]
+    },
+    {
+      "title": "Cards",
+      "table": [
+        {
+          "action": "Physical card issuing",
+          "price1": "0.00€",
+          "price2": "5.00€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Physical card reissuing, renewal",
+          "price1": "5.00€",
+          "price2": "5.00€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Physical card replacement",
+          "price1": "5.00€",
+          "price2": "5.00€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Card delivery (cost, varies depending on country)",
+          "price1": "0.00€",
+          "price2": "2.00€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Virtual card issuing",
+          "price1": "0.00€",
+          "price2": "2.99€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Virtual card reissuing, renewal",
+          "price1": "0.25€",
+          "price2": "0.50€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Virtual card replacement",
+          "price1": "0.25€",
+          "price2": "0.50€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Card activation (physical, virtual)",
+          "price1": "0.00€",
+          "price2": "1.99€",
+          "period": "One-Off"
+        },
+        {
+          "action": "Physical card monthly",
+          "price1": "0.00€",
+          "price2": "1.49€",
+          "period": "Monthly"
+        },
+        {
+          "action": "Virtual card monthly",
+          "price1": "0.00€",
+          "price2": "1.49€",
+          "period": "Monthly"
+        },
+        {
+          "action": "Card inactivity fees (after 3 months)",
+          "price1": "0.00€",
+          "price2": "0.99€",
+          "period": "Monthly"
+        },
+        {
+          "action": "Card blocking/unblocking, PIN unblocking",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Per event"
+        },
+        {
+          "action": "Balance inquiry (ATM, SMS)",
+          "price1": "0.35€",
+          "price2": "0.35€",
+          "period": "Per event"
+        },
+        { "action": "PIN change", "price1": "0.00€", "price2": "0.50€", "period": "Per event" }
+      ]
+    },
+    {
+      "title": "Card Transactions",
+      "table": [
+        {
+          "action": "Ledger load Fee (card account top-up)",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Per event"
+        },
+        {
+          "action": "CARD PAYMENT EEA ONLINE",
+          "price1": {
+            "value": "0.22€",
+            "note": "First 10 card payments are complementary (per month)"
+          },
+          "price2": "0.22€",
+          "period": "Per event"
+        },
+        {
+          "action": "CARD PAYMENT EEA+ POS",
+          "price1": {
+            "value": "0.22€",
+            "note": "First 10 card payments are complementary (per month)"
+          },
+          "price2": "0.22€",
+          "period": "Per event"
+        },
+        {
+          "action": "CARD PAYMENT international ONLINE + FX",
+          "price1": "0.90€ + 1%",
+          "price2": "0.90€ + 1%",
+          "period": "Per event"
+        },
+        {
+          "action": "CARD PAYMENT international POS + FX",
+          "price1": "0.90€ + 1%",
+          "price2": "0.90€ + 1%",
+          "period": "Per event"
+        },
+        {
+          "action": "ATM EEA+ (+ ATM cost)",
+          "price1": "1.2€ + 3.0%",
+          "price2": "1.2€ + 3.0%",
+          "period": "Per event"
+        },
+        {
+          "action": "ATM International (+ ATM cost)",
+          "price1": "1.75€ + 3%",
+          "price2": "1.75€ + 3%",
+          "period": "Per event"
+        },
+        {
+          "action": "3D Secure SMS and/or SCA for online transactions",
+          "price1": "0.09€",
+          "price2": "0.09€",
+          "period": "Per item"
+        },
+        {
+          "action": "3DS Card enrollment",
+          "price1": "0.05€",
+          "price2": "0.05€",
+          "period": "Monthly"
+        },
+        {
+          "action": "SMS notification (excluding MC Secure Code and Visa Secure)",
+          "price1": "0.06€",
+          "price2": "0.06€",
+          "period": "Per event"
+        },
+        {
+          "action": "Digital card monthly (Apple Pay, Google Pay) - per card",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Monthly"
+        },
+        {
+          "action": "Google Pay - online or POS payment (on top)",
+          "price1": "0.10%",
+          "price2": "0.10%",
+          "period": "Monthly"
+        },
+        {
+          "action": "Apple Pay - online or POS payment (on top)",
+          "price1": "0.10%",
+          "price2": "0.10%",
+          "period": "Monthly"
         }
       ]
     }

@@ -12,173 +12,553 @@
     "regular": "Solo se cobrarán a su cuenta las tarifas según su uso.*",
     "note": "* Las tarifas de uso son necesarias para cubrir los costos de los socios de servicio bancario y de tarjetas, quienes manejan las transacciones financieras. Estas tarifas son una manera financieramente sostenible para que SORA brinde sus servicios mientras garantiza la privacidad y la seguridad de los usuarios. Es importante recordar que si un producto es gratuito, probablemente tú seas el producto que se está vendiendo. Con SORA, puedes confiar en que tu información personal no se utiliza con fines de lucro. Por lo tanto, pagar las tarifas de uso es un pequeño precio a pagar por la tranquilidad que viene con el uso de una plataforma segura y confiable como la Tarjeta SORA."
   },
-  "action": "Acción",
-  "amount": "Cantidad",
-  "recurrence": "Recurrencia/Condiciones",
-  "items": [
+  "action": "Artículo de facturación",
+  "price1": "Precio para el usuario final",
+  "price2": "2ª tarjeta / cuenta +",
+  "period": "Período",
+  "adoptionGroups": {
+    "earlyAdopters": "Primeros Adoptantes",
+    "afterACQIntegration": "Estándar"
+  },
+  "earlyAdopters": [
     {
-      "title": "Tarifas de Transacción IBAN/SEPA",
+      "title": "Incorporación",
       "table": [
         {
-          "action": "Tarifa de transferencia de cuenta a cuenta (interledger)",
-          "amount": "€0.22",
-          "recurrence": "por transacción"
+          "action": "Suscripción anual sugerida",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Anual"
         },
+        { "action": "Incorporación KYC", "price1": "0.00€", "price2": "0.00€", "period": "Único" },
         {
-          "action": "Tarifa de transacción entrante/saliente (SEPA, SEPA instantánea)",
-          "amount": "0.1% + €0.40",
-          "recurrence": "por transacción"
-        },
-        {
-          "action": "BACS, CHAPS, ACH",
-          "amount": "0.1% + €1.10",
-          "recurrence": "por transacción"
-        },
-        {
-          "action": "Tarifa de carga IBAN/ledger (transferencia de tarjeta)",
-          "amount": "€0",
-          "recurrence": "por transacción"
+          "action": "Cribado (2x al año)",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Anual"
         }
       ]
     },
     {
-      "title": "Tarifas de Conversión de FX",
+      "title": "Cuenta",
       "table": [
         {
-          "action": "FX",
-          "amount": "T1 0.7%, T2 1%, T3 2.2%, T4 por caso",
-          "recurrence": "de volumen de transacción, dependiente de la moneda"
+          "action": "Emisión + activación de cuenta",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Único"
+        },
+        { "action": "Cuenta mensual", "price1": "0.00€", "price2": "0.00€", "period": "Mensual" },
+        {
+          "action": "Tarifas por inactividad de cuenta (después de 3 meses)",
+          "price1": "1.99€",
+          "price2": "1.99€",
+          "period": "Mensual"
+        },
+        {
+          "action": "Cierre de cuenta",
+          "price1": "8.00€",
+          "price2": "8.00€",
+          "period": "Único"
         }
       ]
     },
     {
-      "title": "Tarifas de Tarjeta y Cuenta",
+      "title": "Transacciones de Cuenta",
       "table": [
         {
-          "action": "Recarga de cuenta/tarjeta con tarjeta de débito o crédito de terceros a través de transacción de comercio electrónico",
-          "amount": "2.5%",
-          "recurrence": "del volumen de transacción + intercambio + costos del esquema de tarjeta"
+          "action": "Transacciones INTERNAS (entre las cuentas del usuario)",
+          "price1": "0.22€",
+          "price2": "0.22€",
+          "period": "Por evento"
         },
         {
-          "action": "Recarga de cuenta/tarjeta con tarjeta de débito o crédito de terceros a través de transacción softPOS—tarjeta presente",
-          "amount": "1.5%",
-          "recurrence": "del volumen de transacción + intercambio + costos del esquema de tarjeta"
+          "action": "Transacciones INTERLEDGER (entre usuarios)",
+          "price1": "0.22€",
+          "price2": "0.22€",
+          "period": "Por evento"
         },
         {
-          "action": "Costo de inactividad (tasa de interés negativo en IBANs en euros)",
-          "amount": "0.06%",
-          "recurrence": "mensual, incluido en la tarifa de la cuenta para saldos menores a €1,500 solamente"
+          "action": "SEPA entrante",
+          "price1": "0.05€",
+          "price2": "0.05€",
+          "period": "Por evento"
         },
         {
-          "action": "Compras POS/en línea",
-          "amount": "10 compras complementarias",
-          "recurrence": "por mes"
+          "action": "SEPA saliente",
+          "price1": "0.50€",
+          "price2": "0.50€",
+          "period": "Por evento"
         },
         {
-          "action": null,
-          "amount": "€0.22",
-          "recurrence": "por compra después de eso"
+          "action": "SWIFT entrante",
+          "price1": "0.05€",
+          "price2": "0.05€",
+          "period": "Por evento"
         },
         {
-          "action": "Tarjeta virtual",
-          "amount": "la primera tarjeta es pagada por la comunidad SORA",
-          "recurrence": ""
+          "action": "SWIFT saliente",
+          "price1": "20.00€",
+          "price2": "20.00€",
+          "period": "Por evento"
         },
         {
-          "action": null,
-          "amount": "tarjetas adicionales pagadas por el usuario €2",
-          "recurrence": "por tarjeta virtual emitida"
+          "action": "Recarga de cuenta con tarjeta de 3rd Party",
+          "price1": "int++ 3%",
+          "price2": "int++ 3%",
+          "period": "Por evento"
         },
         {
-          "action": "Tarifa de mantenimiento mensual de la tarjeta",
-          "amount": "€0 / €0.99 si la tarjeta no se usa al menos 3 veces por mes",
-          "recurrence": "pagada por la comunidad SORA para los primeros 5000 usuarios"
+          "action": "Recarga de cuenta con SoftPOS de 3rd Party",
+          "price1": "int++ 2%",
+          "price2": "int++ 2%",
+          "period": "Por evento"
         },
         {
-          "action": "Tarifa de membresía",
-          "amount": "€0",
-          "recurrence": "ofrecida por la comunidad SORA"
-        },
-        {
-          "action": "Tarifa 3D secure",
-          "amount": "€0.18",
-          "recurrence": "por intento"
-        },
-        {
-          "action": "ATM doméstico",
-          "amount": "€1.20 + 0.5%",
-          "recurrence": "por transacción, pueden aplicar costos adicionales dependiendo del proveedor de ATM"
-        },
-        {
-          "action": "ATM EEA+UK",
-          "amount": "€1.20 + 0.8%",
-          "recurrence": "por transacción, pueden aplicar costos adicionales dependiendo del proveedor de ATM"
-        },
-        {
-          "action": "ATM internacional",
-          "amount": "€1.20 + 3%",
-          "recurrence": "por transacción, pueden aplicar costos adicionales dependiendo del proveedor de ATM"
-        },
-        {
-          "action": "Operaciones ATM",
-          "amount": "€0",
-          "recurrence": "más costos si los hay (rechazo, etc.)"
-        },
-        {
-          "action": "Compras en moneda extranjera / ATM",
-          "amount": "€0.65 + 0.2%",
-          "recurrence": "más costos FX si los hay"
-        },
-        {
-          "action": "Consulta de saldo en ATM",
-          "amount": "€0.65",
-          "recurrence": "más costos si los hay"
-        },
-        {
-          "action": "Tarifa de carga (tarjeta, directa)",
-          "amount": "0%",
-          "recurrence": "del monto de carga + tarifas de transferencia bancaria"
-        },
-        {
-          "action": "Tarifa de cambio XOR↔EUR",
-          "amount": "1.95%",
-          "recurrence": "del monto de carga + tarifas de transferencia bancaria"
+          "action": "Recarga de cuenta con Crypto",
+          "price1": "1.0%",
+          "price2": "1.0%",
+          "period": "Por evento"
         }
       ]
     },
     {
-      "title": "Límites",
+      "title": "Tarjetas",
       "table": [
         {
-          "action": "Límite de Retiro de Efectivo",
-          "amount": {
-            "value": "EUR 5,000*",
-            "note": "* Será mayor para los próximos programas de tarjet as de nivel superior. Se deben observar los límites de ATM."
+          "action": "Emisión de tarjeta física",
+          "price1": "0.00€",
+          "price2": "5.00€",
+          "period": "Único"
+        },
+        {
+          "action": "Reemisión de tarjeta física, renovación",
+          "price1": "5.00€",
+          "price2": "5.00€",
+          "period": "Único"
+        },
+        {
+          "action": "Sustitución de tarjeta física",
+          "price1": "5.00€",
+          "price2": "5.00€",
+          "period": "Único"
+        },
+        {
+          "action": "Entrega de tarjeta (coste, varía según el país)",
+          "price1": "0.00€",
+          "price2": "2.00€",
+          "period": "Único"
+        },
+        {
+          "action": "Emisión de tarjeta virtual",
+          "price1": "0.00€",
+          "price2": "2.99€",
+          "period": "Único"
+        },
+        {
+          "action": "Reemisión de tarjeta virtual, renovación",
+          "price1": "0.25€",
+          "price2": "0.50€",
+          "period": "Único"
+        },
+        {
+          "action": "Sustitución de tarjeta virtual",
+          "price1": "0.25€",
+          "price2": "0.50€",
+          "period": "Único"
+        },
+        {
+          "action": "Activación de tarjeta (física, virtual)",
+          "price1": "0.00€",
+          "price2": "1.99€",
+          "period": "Único"
+        },
+        {
+          "action": "Tarjeta física mensual",
+          "price1": "0.00€",
+          "price2": "1.49€",
+          "period": "Mensual"
+        },
+        {
+          "action": "Tarjeta virtual mensual",
+          "price1": "0.00€",
+          "price2": "1.49€",
+          "period": "Mensual"
+        },
+        {
+          "action": "Tarifas por inactividad de tarjeta (después de 3 meses) - virtual",
+          "price1": "0.00€",
+          "price2": "0.99€",
+          "period": "Mensual"
+        },
+        {
+          "action": "Tarifas por inactividad de tarjeta (después de 3 meses) - física",
+          "price1": "0.00€",
+          "price2": "0.99€",
+          "period": "Mensual"
+        },
+        {
+          "action": "Bloqueo/desbloqueo de tarjeta, desbloqueo de PIN",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Por evento"
+        },
+        {
+          "action": "Consulta de saldo (ATM, SMS)",
+          "price1": "0.00€",
+          "price2": "0.35€",
+          "period": "Por evento"
+        },
+        { "action": "Cambio de PIN", "price1": "0.00€", "price2": "0.50€", "period": "Por evento" }
+      ]
+    },
+    {
+      "title": "Transacciones de Tarjeta",
+      "table": [
+        {
+          "action": "Tarifa de carga de libro mayor (recarga de cuenta con tarjeta)",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Por evento"
+        },
+        {
+          "action": "PAGO CON TARJETA EEA ONLINE",
+          "price1": {
+            "value": "0.22€",
+            "note": "Los primeros 10 pagos con tarjeta son complementarios (por mes)"
           },
-          "recurrence": "por día"
+          "price2": "0.22€",
+          "period": "Por evento"
         },
         {
-          "action": "Límite de Gasto",
-          "amount": {
-            "value": "EUR 25,000*",
-            "note": "* Será mayor para los próximos programas de tarjetas de nivel superior."
+          "action": "PAGO CON TARJETA EEA+ POS",
+          "price1": {
+            "value": "0.22€",
+            "note": "Los primeros 10 pagos con tarjeta son complementarios (por mes)"
           },
-          "recurrence": "por día"
+          "price2": "0.22€",
+          "period": "Por evento"
         },
         {
-          "action": "Límite de Recarga Diaria",
-          "amount": "EUR 30,000",
-          "recurrence": "por día"
+          "action": "PAGO CON TARJETA internacional ONLINE + FX",
+          "price1": "0.90€ + 1,1%",
+          "price2": "0.90€ + 1,1%",
+          "period": "Por evento"
         },
         {
-          "action": "Límite de Recarga Mensual",
-          "amount": "EUR 30,000",
-          "recurrence": "por mes"
+          "action": "PAGO CON TARJETA internacional POS + FX",
+          "price1": "0.90€ + 1,1%",
+          "price2": "0.90€ + 1,1%",
+          "period": "Por evento"
         },
         {
-          "action": "Límite de Recarga Anual",
-          "amount": "EUR 360,000",
-          "recurrence": "por año"
+          "action": "ATM EEA+ (+ coste del ATM)",
+          "price1": "1.2€ + 3.0%",
+          "price2": "1.2€ + 3.0%",
+          "period": "Por evento"
+        },
+        {
+          "action": "ATM Internacional (+ coste del ATM)",
+          "price1": "1.75€ + 3%",
+          "price2": "1.75€ + 3%",
+          "period": "Por evento"
+        },
+        {
+          "action": "SMS y/o SCA 3D Secure para transacciones online",
+          "price1": "0.09€",
+          "price2": "0.09€",
+          "period": "Por ítem"
+        },
+        {
+          "action": "Inscripción en 3DS",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Mensual"
+        },
+        {
+          "action": "Notificación por SMS (excluyendo MC Secure Code y Visa Secure)",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Por evento"
+        },
+        {
+          "action": "Tarjeta digital trimestral (Apple Pay) - por tarjeta",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Mensual"
+        },
+        {
+          "action": "Google Pay - pago online o en POS (adicional)",
+          "price1": "0.00%",
+          "price2": "0.00%",
+          "period": "Mensual"
+        },
+        {
+          "action": "Apple Pay - pago online o en POS (adicional)",
+          "price1": "0.00%",
+          "price2": "0.00%",
+          "period": "Mensual"
+        }
+      ]
+    }
+  ],
+  "afterACQIntegration": [
+    {
+      "title": "Incorporación",
+      "table": [
+        {
+          "action": "Suscripción anual sugerida",
+          "price1": "39.00€",
+          "price2": "0.00€",
+          "period": "Anual"
+        },
+        { "action": "Incorporación KYC", "price1": "0.00€", "price2": "0.00€", "period": "Único" },
+        {
+          "action": "Cribado (2x al año)",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Anual"
+        }
+      ]
+    },
+    {
+      "title": "Cuenta",
+      "table": [
+        {
+          "action": "Emisión + activación de cuenta",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Único"
+        },
+        { "action": "Cuenta mensual", "price1": "0.00€", "price2": "0.00€", "period": "Mensual" },
+        {
+          "action": "Comisiones por inactividad de cuenta (después de 4 meses)",
+          "price1": "1.99€",
+          "price2": "1.99€",
+          "period": "Mensual"
+        },
+        { "action": "Cierre de cuenta", "price1": "8.00€", "price2": "8.00€", "period": "Único" }
+      ]
+    },
+    {
+      "title": "Transacciones de Cuenta",
+      "table": [
+        {
+          "action": "Transacciones INTERNAS (entre cuentas del mismo usuario)",
+          "price1": "0.22€",
+          "price2": "0.22€",
+          "period": "Por evento"
+        },
+        {
+          "action": "Transacciones INTERLEDGER (entre usuarios)",
+          "price1": "0.22€",
+          "price2": "0.22€",
+          "period": "Por evento"
+        },
+        { "action": "SEPA entrante", "price1": "0.05€", "price2": "0.05€", "period": "Por evento" },
+        { "action": "SEPA saliente", "price1": "0.50€", "price2": "0.50€", "period": "Por evento" },
+        {
+          "action": "SWIFT entrante",
+          "price1": "0.05€",
+          "price2": "0.05€",
+          "period": "Por evento"
+        },
+        {
+          "action": "SWIFT saliente",
+          "price1": "20.00€",
+          "price2": "20.00€",
+          "period": "Por evento"
+        },
+        {
+          "action": "Recarga de cuenta con tarjeta de terceros",
+          "price1": "int++ 3%",
+          "price2": "int++ 3%",
+          "period": "Por evento"
+        },
+        {
+          "action": "Recarga de cuenta con SoftPOS de terceros",
+          "price1": "int++ 2%",
+          "price2": "int++ 2%",
+          "period": "Por evento"
+        },
+        {
+          "action": "Recarga de cuenta con criptomonedas",
+          "price1": "1.0%",
+          "price2": "1.0%",
+          "period": "Por evento"
+        }
+      ]
+    },
+    {
+      "title": "Tarjetas",
+      "table": [
+        {
+          "action": "Emisión de tarjeta física",
+          "price1": "0.00€",
+          "price2": "5.00€",
+          "period": "Único"
+        },
+        {
+          "action": "Reemisión, renovación de tarjeta física",
+          "price1": "5.00€",
+          "price2": "5.00€",
+          "period": "Único"
+        },
+        {
+          "action": "Sustitución de tarjeta física",
+          "price1": "5.00€",
+          "price2": "5.00€",
+          "period": "Único"
+        },
+        {
+          "action": "Entrega de tarjeta (coste, varía según el país)",
+          "price1": "0.00€",
+          "price2": "2.00€",
+          "period": "Único"
+        },
+        {
+          "action": "Emisión de tarjeta virtual",
+          "price1": "0.00€",
+          "price2": "2.99€",
+          "period": "Único"
+        },
+        {
+          "action": "Reemisión, renovación de tarjeta virtual",
+          "price1": "0.25€",
+          "price2": "0.50€",
+          "period": "Único"
+        },
+        {
+          "action": "Sustitución de tarjeta virtual",
+          "price1": "0.25€",
+          "price2": "0.50€",
+          "period": "Único"
+        },
+        {
+          "action": "Activación de tarjeta (física, virtual)",
+          "price1": "0.00€",
+          "price2": "1.99€",
+          "period": "Único"
+        },
+        {
+          "action": "Tarjeta física mensual",
+          "price1": "0.00€",
+          "price2": "1.49€",
+          "period": "Mensual"
+        },
+        {
+          "action": "Tarjeta virtual mensual",
+          "price1": "0.00€",
+          "price2": "1.49€",
+          "period": "Mensual"
+        },
+        {
+          "action": "Comisiones por inactividad de tarjeta (después de 3 meses)",
+          "price1": "0.00€",
+          "price2": "0.99€",
+          "period": "Mensual"
+        },
+        {
+          "action": "Bloqueo/desbloqueo de tarjeta, desbloqueo de PIN",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Por evento"
+        },
+        {
+          "action": "Consulta de saldo (Cajero, SMS)",
+          "price1": "0.35€",
+          "price2": "0.35€",
+          "period": "Por evento"
+        },
+        { "action": "Cambio de PIN", "price1": "0.00€", "price2": "0.50€", "period": "Por evento" }
+      ]
+    },
+    {
+      "title": "Transacciones de Tarjeta",
+      "table": [
+        {
+          "action": "Tarifa de carga de libro mayor (recarga de cuenta con tarjeta)",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Por evento"
+        },
+        {
+          "action": "PAGO CON TARJETA EEA ONLINE",
+          "price1": {
+            "value": "0.22€",
+            "note": "Los primeros 10 pagos con tarjeta son complementarios (por mes)"
+          },
+          "price2": "0.22€",
+          "period": "Por evento"
+        },
+        {
+          "action": "PAGO CON TARJETA EEA+ POS",
+          "price1": {
+            "value": "0.22€",
+            "note": "Los primeros 10 pagos con tarjeta son complementarios (por mes)"
+          },
+          "price2": "0.22€",
+          "period": "Por evento"
+        },
+        {
+          "action": "PAGO CON TARJETA internacional ONLINE + FX",
+          "price1": "0.90€ + 1%",
+          "price2": "0.90€ + 1%",
+          "period": "Por evento"
+        },
+        {
+          "action": "PAGO CON TARJETA internacional POS + FX",
+          "price1": "0.90€ + 1%",
+          "price2": "0.90€ + 1%",
+          "period": "Por evento"
+        },
+        {
+          "action": "Cajero EEA+ (+ coste del cajero)",
+          "price1": "1.2€ + 3.0%",
+          "price2": "1.2€ + 3.0%",
+          "period": "Por evento"
+        },
+        {
+          "action": "Cajero Internacional (+ coste del cajero)",
+          "price1": "1.75€ + 3%",
+          "price2": "1.75€ + 3%",
+          "period": "Por evento"
+        },
+        {
+          "action": "SMS 3D Secure y/o SCA para transacciones online",
+          "price1": "0.09€",
+          "price2": "0.09€",
+          "period": "Por ítem"
+        },
+        {
+          "action": "Inscripción de tarjeta 3DS",
+          "price1": "0.05€",
+          "price2": "0.05€",
+          "period": "Mensual"
+        },
+        {
+          "action": "Notificación por SMS (excluyendo MC Secure Code y Visa Secure)",
+          "price1": "0.06€",
+          "price2": "0.06€",
+          "period": "Por evento"
+        },
+        {
+          "action": "Tarjeta digital mensual (Apple Pay, Google Pay) - por tarjeta",
+          "price1": "0.00€",
+          "price2": "0.00€",
+          "period": "Mensual"
+        },
+        {
+          "action": "Google Pay - pago online o POS (adicional)",
+          "price1": "0.10%",
+          "price2": "0.10%",
+          "period": "Mensual"
+        },
+        {
+          "action": "Apple Pay - pago online o POS (adicional)",
+          "price1": "0.10%",
+          "price2": "0.10%",
+          "period": "Mensual"
         }
       ]
     }
