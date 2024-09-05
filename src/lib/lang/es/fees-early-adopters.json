@@ -23,7 +23,7 @@
       "title": "Incorporación",
       "table": [
         {
-          "action": "Suscripción anual sugerida",
+          "action": "Suscripción anual",
           "price1": "0.00€",
           "price2": "0.00€",
           "period": "Anual"
@@ -88,24 +88,6 @@
           "action": "SWIFT saliente",
           "price1": "20.00€",
           "price2": "20.00€",
-          "period": "Por evento"
-        },
-        {
-          "action": "Recarga de cuenta con tarjeta de terceros",
-          "price1": "int++ 3%",
-          "price2": "int++ 3%",
-          "period": "Por evento"
-        },
-        {
-          "action": "Recarga de cuenta con SoftPOS de terceros",
-          "price1": "int++ 2%",
-          "price2": "int++ 2%",
-          "period": "Por evento"
-        },
-        {
-          "action": "Recarga de cuenta con criptomonedas",
-          "price1": "1.0%",
-          "price2": "1.0%",
           "period": "Por evento"
         }
       ]
@@ -252,14 +234,14 @@
         },
         {
           "action": "PAGO CON TARJETA internacional ONLINE + FX",
-          "price1": "0.90€ + 1,1%",
-          "price2": "0.90€ + 1,1%",
+          "price1": "0.90€ + 1.1%",
+          "price2": "0.90€ + 1.1%",
           "period": "Por evento"
         },
         {
           "action": "PAGO CON TARJETA internacional POS + FX",
-          "price1": "0.90€ + 1,1%",
-          "price2": "0.90€ + 1,1%",
+          "price1": "0.90€ + 1.1%",
+          "price2": "0.90€ + 1.1%",
           "period": "Por evento"
         },
         {
@@ -273,42 +255,6 @@
           "price1": "1.75€ + 3%",
           "price2": "1.75€ + 3%",
           "period": "Por evento"
-        },
-        {
-          "action": "SMS 3D Secure y/o SCA para transacciones online",
-          "price1": "0.09€",
-          "price2": "0.09€",
-          "period": "Por ítem"
-        },
-        {
-          "action": "Inscripción de tarjeta 3DS",
-          "price1": "0.00€",
-          "price2": "0.00€",
-          "period": "Mensual"
-        },
-        {
-          "action": "Notificación por SMS (excluyendo MC Secure Code y Visa Secure)",
-          "price1": "0.00€",
-          "price2": "0.00€",
-          "period": "Por evento"
-        },
-        {
-          "action": "Tarjeta digital mensual (Apple Pay, Google Pay) - por tarjeta",
-          "price1": "0.00€",
-          "price2": "0.00€",
-          "period": "Mensual"
-        },
-        {
-          "action": "Google Pay - pago online o POS (adicional)",
-          "price1": "0.00%",
-          "price2": "0.00%",
-          "period": "Mensual"
-        },
-        {
-          "action": "Apple Pay - pago online o POS (adicional)",
-          "price1": "0.00%",
-          "price2": "0.00%",
-          "period": "Mensual"
         }
       ]
     }
@@ -327,23 +273,31 @@
         "period": "por día"
       },
       {
-        "action": "Límite Diario de Recarga",
-        "limit": "30,000€",
-        "period": "por día"
+        "action": "Límite de pago saliente",
+        "limit": "3,000€",
+        "period": "Por transacción"
       },
       {
-        "action": "Límite Mensual de Recarga",
-        "limit": "30,000€",
-        "period": "por mes"
+        "action": "Límite diario de pago saliente",
+        "limit": "5,000€",
+        "period": "Por día"
       },
       {
-        "action": "Límite Anual de Recarga",
-        "limit": "360,000€",
-        "period": "por año"
+        "action": "Límite mensual de pago saliente",
+        "limit": "10,000€",
+        "period": "Por mes"
       }
     ]
   },
   "disclaimer": "Aviso: todas las tarifas están sujetas a cambios.",
+  "limitsPDF": [
+    "Consulta el ",
+    {
+      "title": "Límites de transacción de la tarjeta SORA (PDF)",
+      "href": "/pub/SORA_Card_transaction_limits_es.pdf"
+    },
+    " para más detalles sobre los límites."
+  ],
   "reference": [
     "Consulta ",
     {

@@ -224,14 +224,14 @@
         },
         {
           "action": "CARD PAYMENT international ONLINE + FX",
-          "price1": "0.90€ + 1%",
-          "price2": "0.90€ + 1%",
+          "price1": "0.90€ + 1.1%",
+          "price2": "0.90€ + 1.1%",
           "period": "Per event"
         },
         {
           "action": "CARD PAYMENT international POS + FX",
-          "price1": "0.90€ + 1%",
-          "price2": "0.90€ + 1%",
+          "price1": "0.90€ + 1.1%",
+          "price2": "0.90€ + 1.1%",
           "period": "Per event"
         },
         {
@@ -263,21 +263,6 @@
         "period": "Per day"
       },
       {
-        "action": "Daily Top-Up Limit",
-        "limit": "30,000€",
-        "period": "Per day"
-      },
-      {
-        "action": "Monthly Top-Up Limit",
-        "limit": "30,000€",
-        "period": "Per month"
-      },
-      {
-        "action": "Annual Top-Up Limit",
-        "limit": "360,000€",
-        "period": "Per year"
-      },
-      {
         "action": "Outgoing payment limit",
         "limit": "3,000€",
         "period": "Per transaction"
@@ -291,19 +276,10 @@
         "action": "Monthly outgoing payment limit",
         "limit": "10,000€",
         "period": "Per month"
-      },
-      {
-        "action": "Incoming transaction from Restricted countries list",
-        "limit": "0€",
-        "period": ""
-      },
-      {
-        "action": "Incoming transaction to Restricted countries list",
-        "limit": "0€",
-        "period": ""
       }
     ]
   },
+  "disclaimer": "Disclaimer: all fees are subject to change.",
   "limitsPDF": [
     "Refer to the ",
     {
@@ -312,7 +288,6 @@
     },
     " for further details on Limits."
   ],
-  "disclaimer": "Disclaimer: all fees are subject to change.",
   "reference": [
     "Refer to ",
     {

@@ -232,14 +232,14 @@
         },
         {
           "action": "PAGO CON TARJETA internacional ONLINE + FX",
-          "price1": "0.90€ + 1%",
-          "price2": "0.90€ + 1%",
+          "price1": "0.90€ + 1.1%",
+          "price2": "0.90€ + 1.1%",
           "period": "Por evento"
         },
         {
           "action": "PAGO CON TARJETA internacional POS + FX",
-          "price1": "0.90€ + 1%",
-          "price2": "0.90€ + 1%",
+          "price1": "0.90€ + 1.1%",
+          "price2": "0.90€ + 1.1%",
           "period": "Por evento"
         },
         {
@@ -271,21 +271,6 @@
         "period": "Por día"
       },
       {
-        "action": "Límite Diario de Recarga",
-        "limit": "30,000€",
-        "period": "Por día"
-      },
-      {
-        "action": "Límite Mensual de Recarga",
-        "limit": "30,000€",
-        "period": "Por mes"
-      },
-      {
-        "action": "Límite Anual de Recarga",
-        "limit": "360,000€",
-        "period": "Por año"
-      },
-      {
         "action": "Límite de pago saliente",
         "limit": "3,000€",
         "period": "Por transacción"
@@ -299,19 +284,10 @@
         "action": "Límite mensual de pago saliente",
         "limit": "10,000€",
         "period": "Por mes"
-      },
-      {
-        "action": "Transacción entrante desde la lista de países restringidos",
-        "limit": "0€",
-        "period": ""
-      },
-      {
-        "action": "Transacción entrante hacia la lista de países restringidos",
-        "limit": "0€",
-        "period": ""
       }
     ]
   },
+  "disclaimer": "Aviso: todas las tarifas están sujetas a cambios.",
   "limitsPDF": [
     "Consulta el ",
     {
@@ -320,7 +296,6 @@
     },
     " para más detalles sobre los límites."
   ],  
-  "disclaimer": "Aviso: todas las tarifas están sujetas a cambios.",
   "reference": [
     "Consulta ",
     {
