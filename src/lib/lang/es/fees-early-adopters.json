@@ -265,12 +265,12 @@
       {
         "action": "Límite de Retiro de Efectivo",
         "limit": "5,000€*",
-        "period": "por día"
+        "period": "Por día"
       },
       {
         "action": "Límite de Gastos",
         "limit": "25,000€*",
-        "period": "por día"
+        "period": "Por día"
       },
       {
         "action": "Límite de pago saliente",

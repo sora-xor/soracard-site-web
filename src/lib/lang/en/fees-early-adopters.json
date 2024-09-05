@@ -275,12 +275,12 @@
       {
         "action": "Cash Withdrawal Limit",
         "limit": "5,000€*",
-        "period": "per day"
+        "period": "Per day"
       },
       {
         "action": "Spending Limit",
         "limit": "25,000€*",
-        "period": "per day"
+        "period": "Per day"
       },
       {
         "action": "Outgoing payment limit",
