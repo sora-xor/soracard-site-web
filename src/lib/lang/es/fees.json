@@ -263,27 +263,27 @@
       {
         "action": "Límite de Retiro de Efectivo",
         "limit": "5,000€*",
-        "period": "por día"
+        "period": "Por día"
       },
       {
         "action": "Límite de Gastos",
         "limit": "25,000€*",
-        "period": "por día"
+        "period": "Por día"
       },
       {
         "action": "Límite Diario de Recarga",
         "limit": "30,000€",
-        "period": "por día"
+        "period": "Por día"
       },
       {
         "action": "Límite Mensual de Recarga",
         "limit": "30,000€",
-        "period": "por mes"
+        "period": "Por mes"
       },
       {
         "action": "Límite Anual de Recarga",
         "limit": "360,000€",
-        "period": "por año"
+        "period": "Por año"
       },
       {
         "action": "Límite de pago saliente",
@@ -312,6 +312,14 @@
       }
     ]
   },
+  "reference": [
+    "Consulta el ",
+    {
+      "title": "Límites de transacción de la tarjeta SORA (PDF)",
+      "href": "https://soracard.com/pub/SORA_Card_transaction_limits_es.pdf"
+    },
+    " para más detalles sobre los límites."
+  ],  
   "disclaimer": "Aviso: todas las tarifas están sujetas a cambios.",
   "reference": [
     "Consulta ",

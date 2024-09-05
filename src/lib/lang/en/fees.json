@@ -304,6 +304,14 @@
       }
     ]
   },
+  "reference": [
+    "Refer to the ",
+    {
+      "title": "SORA Card transaction limits (PDF)",
+      "href": "https://soracard.com/pub/SORA_Card_transaction_limits.pdf"
+    },
+    " for further details on Limits."
+  ],
   "disclaimer": "Disclaimer: all fees are subject to change.",
   "reference": [
     "Refer to ",
