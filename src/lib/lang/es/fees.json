@@ -287,12 +287,12 @@
       },
       {
         "action": "Límite de pago saliente",
-        "limit": "3,000€*",
+        "limit": "3,000€",
         "period": "Por transacción"
       },
       {
         "action": "Límite diario de pago saliente",
-        "limit": "5,000€*",
+        "limit": "5,000€",
         "period": "Por día"
       },
       {
@@ -312,7 +312,7 @@
       }
     ]
   },
-  "reference": [
+  "limitsPDF": [
     "Consulta el ",
     {
       "title": "Límites de transacción de la tarjeta SORA (PDF)",

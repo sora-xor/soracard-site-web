@@ -37,6 +37,7 @@ type Fees = {
     title: string
     table: LimitsTable
   }
+  limitsPDF: string
   disclaimer: string
   reference: string
   notes: string[]
@@ -147,6 +148,9 @@ const nav = computed(() => {
         </tbody>
       </table>
 
+      <p>
+        <RichText :content="tm('limitsPDF')" />
+      </p>
       <p>
         {{ t('disclaimer') }}
       </p>

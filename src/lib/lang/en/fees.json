@@ -279,12 +279,12 @@
       },
       {
         "action": "Outgoing payment limit",
-        "limit": "3,000€*",
+        "limit": "3,000€",
         "period": "Per transaction"
       },
       {
         "action": "Daily outgoing payment limit",
-        "limit": "5,000€*",
+        "limit": "5,000€",
         "period": "Per day"
       },
       {
@@ -304,7 +304,7 @@
       }
     ]
   },
-  "reference": [
+  "limitsPDF": [
     "Refer to the ",
     {
       "title": "SORA Card transaction limits (PDF)",
