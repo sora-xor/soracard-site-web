@@ -23,7 +23,7 @@
       "title": "Onboarding",
       "table": [
         {
-          "action": "Suggested yearly subscription",
+          "action": "Yearly subscription",
           "price1": "39.00€",
           "price2": "0.00€",
           "period": "Yearly"
@@ -78,24 +78,6 @@
           "action": "SWIFT outgoing",
           "price1": "20.00€",
           "price2": "20.00€",
-          "period": "Per event"
-        },
-        {
-          "action": "Account Topup 3rd Party Card",
-          "price1": "int++ 3%",
-          "price2": "int++ 3%",
-          "period": "Per event"
-        },
-        {
-          "action": "Account Topup 3rd Party SoftPOS",
-          "price1": "int++ 2%",
-          "price2": "int++ 2%",
-          "period": "Per event"
-        },
-        {
-          "action": "Account Topup Crypto",
-          "price1": "1.0%",
-          "price2": "1.0%",
           "period": "Per event"
         }
       ]
@@ -263,42 +245,6 @@
           "price1": "1.75€ + 3%",
           "price2": "1.75€ + 3%",
           "period": "Per event"
-        },
-        {
-          "action": "3D Secure SMS and/or SCA for online transactions",
-          "price1": "0.09€",
-          "price2": "0.09€",
-          "period": "Per item"
-        },
-        {
-          "action": "3DS Card enrollment",
-          "price1": "0.05€",
-          "price2": "0.05€",
-          "period": "Monthly"
-        },
-        {
-          "action": "SMS notification (excluding MC Secure Code and Visa Secure)",
-          "price1": "0.06€",
-          "price2": "0.06€",
-          "period": "Per event"
-        },
-        {
-          "action": "Digital card monthly (Apple Pay, Google Pay) - per card",
-          "price1": "0.00€",
-          "price2": "0.00€",
-          "period": "Monthly"
-        },
-        {
-          "action": "Google Pay - online or POS payment (on top)",
-          "price1": "0.10%",
-          "price2": "0.10%",
-          "period": "Monthly"
-        },
-        {
-          "action": "Apple Pay - online or POS payment (on top)",
-          "price1": "0.10%",
-          "price2": "0.10%",
-          "period": "Monthly"
         }
       ]
     }
@@ -309,27 +255,52 @@
       {
         "action": "Cash Withdrawal Limit",
         "limit": "5,000€*",
-        "period": "per day"
+        "period": "Per day"
       },
       {
         "action": "Spending Limit",
         "limit": "25,000€*",
-        "period": "per day"
+        "period": "Per day"
       },
       {
         "action": "Daily Top-Up Limit",
         "limit": "30,000€",
-        "period": "per day"
+        "period": "Per day"
       },
       {
         "action": "Monthly Top-Up Limit",
         "limit": "30,000€",
-        "period": "per month"
+        "period": "Per month"
       },
       {
         "action": "Annual Top-Up Limit",
         "limit": "360,000€",
-        "period": "per year"
+        "period": "Per year"
+      },
+      {
+        "action": "Outgoing payment limit",
+        "limit": "3,000€*",
+        "period": "Per transaction"
+      },
+      {
+        "action": "Daily outgoing payment limit",
+        "limit": "5,000€*",
+        "period": "Per day"
+      },
+      {
+        "action": "Monthly outgoing payment limit",
+        "limit": "10,000€",
+        "period": "Per month"
+      },
+      {
+        "action": "Incoming transaction from Restricted countries list",
+        "limit": "0€",
+        "period": ""
+      },
+      {
+        "action": "Incoming transaction to Restricted countries list",
+        "limit": "0€",
+        "period": ""
       }
     ]
   },
