@@ -294,8 +294,7 @@
     "Consulta el ",
     {
       "title": "Límites de transacción de la tarjeta SORA (PDF)",
-      "href": "/pub/SORA_Card_transaction_limits_es.pdf",
-      "target": "_blank"
+      "href": "./pub/SORA_Card_transaction_limits_es.pdf"
     },
     " para más detalles sobre los límites."
   ],
