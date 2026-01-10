@@ -2,8 +2,8 @@
 title: 'Important Notice: Termination of SORA Card Services'
 description: 'A formal notice about the end of SORA Card services and the steps that follow. Please review the deadlines and guidance carefully to ensure a smooth transition and avoid losing access to account-related features or remaining balances.'
 date: 2026-01-10  
-image: /blog/termination/cover.jpg # cover for the website, 1920x1080px
-og: /blog/termination/og.jpg # thumbnal image for sharing, 1200x630px
+image: /blog/project-closure/cover.jpg # cover for the website, 1920x1080px
+og: /blog/project-closure/og.jpg # thumbnal image for sharing, 1200x630px
 ---
 Dear SORA Card Users and Community Members,
 
