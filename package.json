@@ -10,6 +10,9 @@
     "postinstall": "nuxt prepare",
     "analyze": "nuxi analyze"
   },
+  "engines": {
+    "node": "24.x"
+  },
   "devDependencies": {
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/i18n": "^8.5.5",
