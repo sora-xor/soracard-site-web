@@ -1,7 +1,6 @@
 ---
 title: 'Releasing SORA Card: Your Gateway to Financial Freedom'
-description: '
-SORA Card — your gateway to a new financial era is live! Manage EUR & crypto in one app, access DeFi, trade on the Polkaswap DEX, and enjoy self-custody. Secure a free subscription for a limited time. Embrace financial freedom and join us on this transformative journey!'
+description: 'SORA Card — your gateway to a new financial era is live! Manage EUR & crypto in one app, access DeFi, trade on the Polkaswap DEX, and enjoy self-custody. Secure a free subscription for a limited time. Embrace financial freedom and join us on this transformative journey!'
 date: 2024-12-12
 image: /blog/releasing-sora-card/cover.jpg # cover for the website, 1920x1080px
 og: /blog/releasing-sora-card/og.jpg # thumbnal image for sharing, 1200x630px
