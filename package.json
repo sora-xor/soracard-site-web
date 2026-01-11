@@ -19,7 +19,7 @@
     "@nuxtjs/sitemap": "^6.1.1",
     "@types/markdown-it": "^14.1.2",
     "@types/nodemailer": "^6.4.16",
-    "nuxt": "^3.13.2",
+    "nuxt": "^3.19.0",
     "nuxt-aos": "^1.2.5",
     "typescript": "^5.6.3",
     "vue": "^3.5.11",
@@ -36,7 +36,9 @@
   },
   "resolutions": {
     "@nuxtjs/mdc": "0.13.3",
-    "vue-i18n": "9.14.3"
+    "vue-i18n": "9.14.3",
+    "@intlify/message-resolver": "9.1.11",
+    "@intlify/vue-i18n-core": "9.14.3"
   },
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
