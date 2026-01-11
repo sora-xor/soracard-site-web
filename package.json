@@ -35,10 +35,7 @@
     "ogl": "^1.0.8"
   },
   "resolutions": {
-    "@nuxtjs/mdc": "0.13.3",
-    "vue-i18n": "9.14.3",
-    "@intlify/message-resolver": "9.1.11",
-    "@intlify/vue-i18n-core": "9.14.3"
+    "@nuxtjs/mdc": "0.13.3"
   },
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
