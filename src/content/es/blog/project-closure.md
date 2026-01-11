@@ -104,7 +104,9 @@ Si su cuenta está suspendida o muestra un saldo restante después del corte de 
 
 ---
 
-## **5. Acción requerida del usuario – Retiro de activos cripto (GateHub)**... Se solicita **encarecidamente** a todos los usuarios retirar **todos los activos cripto** mantenidos en **billeteras de GateHub accedidas a través de la aplicación de SORA Card** **antes del corte de la aplicación**.
+## **5. Acción requerida del usuario – Retiro de activos cripto (GateHub)**
+
+Se solicita **encarecidamente** a todos los usuarios retirar **todos los activos cripto** mantenidos en **billeteras de GateHub accedidas a través de la aplicación de SORA Card** **antes del corte de la aplicación**.
 
 - Los servicios de GateHub son proporcionados por un **proveedor externo**
 - Estos servicios se discontinuarán como parte del cierre de SORA Card
